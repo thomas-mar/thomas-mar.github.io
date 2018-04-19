@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thomas Mar</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="JavaScript" type="text/javascript" src="scripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li onclick="scroll_to('intro')">Home</li>
+            <li onclick="scroll_to('about')">About</li>
+            <li onclick="scroll_to('portfolio')">Portfolio</li>
+            <li onclick="scroll_to('contact')">Contact</li>
+        </ul>
+    </div>
+
+
+    <div class="section" id="intro">
+        <div class="intro">
+            <img src="images/me.jpg">
+            <h1>Thomas Mar</h1>
+            <h5>Software Developer</h5>
+            <br>
+            <hr>
+            <p style="color:lightskyblue;">Hi there.</p>
+            <p>
+                I'm a Computer Science graduate from the University of Auckland currently based in Whangarei. I have a passion for developing
+                websites and web applications software with the goal of becoming full stack web developer.
+            </p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/thomas-mar1/" target="_blank" class="fa fa-linkedin-square" style="font-size:36px"></a>
+                <a href="https://github.com/ThomasMar1/" target="_blank" class="fa fa-github-square" style="font-size:36px"></a>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section" id="about">
+        <h2>My story</h2>
+        <div class="about">
+            <p>I grew up in the beautiful city of Whangarei to chinese parents and have lived there most of my life. Ever since
+                a young age, I have have always been interested and fascinated by technology but I also grew up with a low
+                and passion towards designing stuff. Front-end design has always been part of what I want to do, I love to
+                present stuff and learn visually; which is why I decided to build this website to express some of this design
+                passion I have to compliment my ordinary resume on a word document.
+            </p>
+            <p>
+                Most recently I have been living and studying Computer Science in Auckland at the University of Auckland. I really enjoyed the
+                courses that involved designing web applications and web pages, these were the papers that stood out to me and found most fun to
+                complete. Doing some interning work over the past 2017 summer at a local software start up called <a href="https://mahuta.io">Mahuta Digital</a> 
+                only further who pursue this part of web development. Mahuta gave me the oppurtunitiy to carry over some of the skills I have learnt 
+                while at university as well as introcude me to new technologies development in a commercial environment and work alongside me in gaining
+                a greater understanding of these technologies.
+            </p>
+            <p>
+                Now with what I have learnt over the past three and a half years, I am ready to take this into the real world and continue learning. I am passionate about continuing to grow my
+                repository of knowledge, overcome the adversities as a new graduate developer and challenge myself to bring a fresh take and perspective to 
+                an industry I love and passionate about. 
+            
+        </div>
+
+        <h2>What I know and use</h2>
+        <div class="about">
+            <img src="images/dotnet-logo.png">
+            <img src="images/sql-server.png">
+            <img src="images/angular.png">
+            <img src="images/html.png">
+            <img src="images/css.png">
+            <img src="images/js.png">
+            <img src="images/bootstrap.png">
+            <img src="images/java.png">
+            <img src="images/python.png">
+            <img src="images/vs.png">
+            <img src="images/my-sql.png">
+
+        </div>
+
+    </div>
+
+
+    <div class="section" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+            <img src="images/concept/concept-1.png">
+            <div class="centered">
+                Concept student learning management system built using HTML and CSS for a university HCI course.
+                <br><br>
+                <button>View on Github</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <div class="detail" onclick="sendEmail();">
+                <a href="#" class="fa fa-envelope" style="font-size:24px;"></a>
+                <h5>Email</h5>
+                <hr>
+                <p>thomasmar1119@gmail.com</p>
+            </div>
+
+            <div class="detail">
+                <a href="#" class="fa fa-phone" style="font-size:24px;"></a>
+                <h5>Mobile</h5>
+                <hr>
+                <p>027 310 4221</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="footer">
+        <p>&copy; 2018
+            <u style="cursor: pointer;" onclick="scroll_to('intro')">Thomas Mar</u>. All rights reserved.</p>
+    </div>
+
+
+</body>

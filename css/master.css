@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background: rgb(61, 58, 58);
+}
+
+/*NavBar*/
+
+.navbar{
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+
+}
+
+.navbar li{
+    padding: 20px 10px 20px 10px;
+    font-family: 'Antic';
+    color: white;
+    display: inline-block;
+}
+
+.navbar li:hover{
+    color: rgb(157, 211, 230);
+    cursor: pointer;
+}
+
+
+/*Sections*/
+
+.section{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 100px;
+    
+}
+
+.section h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Antic';
+    font-size: 36px;
+    color: lightskyblue;
+    font-weight: 100;
+}
+
+
+
+/*Intro Div*/
+
+.intro{
+    background: rgba(0, 0, 0, 0.8);
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 50px;
+    animation: fadein 1s
+
+}
+
+.intro h1{
+    font-family: 'Antic';
+    font-size: 36px;
+    color: white;
+    font-weight: 100;
+}
+
+.intro h5{
+    font-family: 'Antic';
+    font-size: 18px;
+    color: white;
+}
+
+.intro p{
+    color: white;
+    font-family: 'Lustria';
+    margin-top: 30px;
+
+}
+
+.intro img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%
+}
+
+.intro .social{
+    padding: 20px;
+}
+
+.about{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about p{
+    color: white;
+    font-family: 'Lustria';
+    margin-top: 30px;
+    text-align: left;
+}
+
+.about img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    background: rgb(255,255,255, 0.1);
+
+}
+
+.about img:hover{
+    background: rgb(255,255,255, 0.5);
+}
+
+.about a{
+    color: lightskyblue;
+}
+
+
+
+.portfolio-container{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    width: 80%;
+
+}
+
+.portfolio-container img{
+    background: lightgray;
+    max-width:100%;
+    max-height:100%;
+    filter: brightness(100%);
+    transition: 0.5s ease;
+}
+
+.portfolio-container .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    color: white;
+    font-family: 'Antic';
+    max-width: 100%;
+    transition: 0.5 ease;
+}
+
+.portfolio-container:hover .centered {
+    visibility: visible;
+    transition: 0.5s ease;
+
+}
+.portfolio-container:hover img {
+    filter: brightness(25%);
+    transition: 0.5s ease;
+}
+
+.portfolio-container .centered button{
+    padding: 10px;
+    background: white;
+    font-family: 'Antic';
+    color: black;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+} 
+
+
+/*Font Awesome*/
+
+.fa {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    padding: 20px;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+
+.container{
+    text-align: center;
+}
+
+.detail{
+    margin: 25px;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-weight: 100;
+    background: rgb(255,255,255, 0.1);
+}
+.detail:hover{
+    background: rgb(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition:.5s;
+
+}
+.detail h5{
+
+    font-family: 'Antic';
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.detail p{
+    font-family: 'Antic';
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+#intro{
+    background-image: url("../images/background/whangarei-falls.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+
+}
+
+#title{
+    font-family: 'Antic';
+    font-size: 36px;
+}
+
+#portfolio{
+    background: gray;
+    height: 1000px;
+}
+
+#contact{
+    background-image: url("../images/background/phone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    background-color: black;
+}
+
+#footer{
+    height: 50px;
+    color: lightskyblue;
+    font-family: "Lustria";
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 0px;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
