@@ -120,9 +120,9 @@ hr{
 }
 
 .about img{
-    height: 120px;
-    width: 120px;
-    padding: 10px;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
 }
 
 .about a{
@@ -139,6 +139,10 @@ hr{
     display: inline-block;
     margin: 20px;
     background: rgb(255, 255, 255, 0.75);
+}
+
+.portfolio > card > div.slide{
+    position: absolute;
 }
 
 .portfolio .card-image-top{
@@ -247,6 +251,16 @@ hr{
     to {
         opacity:1;
     }
+}
+
+
+.slideshow{
+    position:relative;
+    overflow: hidden;
+};
+.slideshow > div { 
+    position: absolute; 
+
 }
 
 
