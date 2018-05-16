@@ -4,23 +4,24 @@
 }
 
 body{
-    background: rgb(61, 58, 58);
+    background: rgb(238, 238, 238);
 }
 
 /*NavBar*/
 .navbar{
     font-family: 'Hind Madurai';
+    font-size: 1.5em;
     position: fixed;
     width: 100%;
     z-index: 9999;
     background: black;
+    text-align: center;
     
 }
 
 .navbar-nav > .nav-item > .nav-link{
     color: white;
     transition:.5s;
-
 }
 
 .navbar-nav > .nav-item > .nav-link:hover{
@@ -30,9 +31,8 @@ body{
 }
 
 .navbar-nav > li{
-    width: 100px;
-    text-align: center;
-}
+    padding-left: 20px;
+    padding-right: 20px;}
 
 
 
@@ -47,7 +47,7 @@ body{
 
 .section h2{
     text-align: center;
-    font-family: 'Passion One';
+    font-family: 'Montserrat';
     font-size: 36px;
     color: rgb(0, 174, 255);;
     font-weight: 100;
@@ -113,16 +113,37 @@ hr{
 }
 
 .about p{
-    color: white;
+    color: black;
     font-family: 'Hind Madurai';
     margin-top: 30px;
     text-align: left;
 }
 
-.about img{
-    height: 120px;
-    width: 120px;
-    padding: 10px;
+.about > .tech-card{
+    width: 200px;
+    padding: 20px;
+    margin: 5px;
+    border: 0.5px solid rgb(136, 136, 136);
+    border-radius: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+}
+
+.about > .tech-card > img{
+    height: 60px;
+    width: 60px;
+
+}
+
+.tech-card h4{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+
+.tech-card:hover{
+    box-shadow: 0 0 6px gray;
 }
 
 .about a{
@@ -133,14 +154,16 @@ hr{
 .portfolio{
     text-align:center;
 }
+.portfolio{
+    text-align:center;
+}
 
 .portfolio .card{
     width: 90%;
     display: inline-block;
     margin: 20px;
-    background: rgb(255, 255, 255, 0.75);
-    font-family: 'Hind Madurai';
-
+    background: rgba(39, 39, 39, 0.75);
+    color: white;
 }
 
 .portfolio > card > div.slide{
@@ -181,6 +204,9 @@ hr{
     color: white;
     font-weight: 100;
     background: rgb(255,255,255, 0.1);
+    border-radius: 5%;
+    transition:.5s;
+
 }
 .detail:hover{
     background: rgb(255, 255, 255, 0.3);
@@ -203,6 +229,22 @@ hr{
     margin-bottom: 10px;
 }
 
+.colour-btn{
+    padding: 10px 30px 10px 30px;
+    background: linear-gradient(to right, rgb(0, 140, 255) , rgb(140, 42, 253));
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    color: white;
+    font-size: 1.5em;
+}
+
+.colour-btn:hover{
+    cursor: pointer;
+
+}
+
+
 
 
 
@@ -212,12 +254,15 @@ hr{
     background-position: center;
     background-size: cover;
     height: 800px;
-
 }
 
 #title{
     font-family: 'Antic';
     font-size: 36px;
+}
+
+#portfolio{
+    background: rgb(224, 224, 224);
 }
 
 
@@ -235,9 +280,10 @@ hr{
     color: white;
     font-family: "Hind Madurai";
     text-align: center;
-    margin: 20px;
+    padding: 20px;
     font-size: 12px;
     padding-bottom: 0px;
+    background: rgba(0, 0, 0);
 }
 
 
