@@ -7,7 +7,7 @@ body{
     background: rgb(238, 238, 238);
 }
 
-/*NavBar*/
+/********************* NavBar ***********************/
 .navbar{
     font-family: 'Hind Madurai';
     font-size: 1.2em;
@@ -42,26 +42,11 @@ body{
 
 
 
-/*Sections*/
-
-.section{
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    
-}
-
-.section h2{
-    text-align: center;
-    font-family: 'Montserrat';
-    font-size: 36px;
-    color: rgb(0, 137, 230);;
-    font-weight: 100;
-}
 
 
 
-/*Intro Div*/
+/********************* Introduciton Card ***********************/
+
 
 .intro .card{
     max-width: 500px;
@@ -112,20 +97,54 @@ hr{
     padding: 20px;
 }
 
-.about{
-    width: 80%;
+
+/********************* Sections ***********************/
+
+
+.section{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.section h2{
     text-align: center;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    color: rgb(0, 137, 230);
+    font-weight: 100;
+}
+
+
+/********************* About Tab ***********************/
+
+
+.section-body{
+    width: 80%;
     margin: 0 auto;
 }
 
-.about p{
+.seciton-body p{
     color: black;
     font-family: 'Hind Madurai';
     margin-top: 30px;
     text-align: left;
 }
 
-.about > .tech-card{
+.section-body a{
+    color: rgb(0, 137, 230);
+}
+
+
+
+/********************* Languages Panels ***********************/
+
+.languages{
+    text-align: center;
+}
+
+.languages > .tech-card{
     width: 200px;
     padding: 20px;
     margin: 5px;
@@ -137,7 +156,7 @@ hr{
     transition: 0.5s;
 }
 
-.about > .tech-card > img{
+.languages > .tech-card > img{
     height: 60px;
     width: 60px;
 
@@ -147,8 +166,6 @@ hr{
     margin-top: 20px;
     font-weight: 200;
     font-size: 1em;
-
-
 }
 
 
@@ -156,17 +173,13 @@ hr{
     box-shadow: 0 0 6px gray;
     transform: scale(1.02);
     transition: 0.2s;
-
 }
 
-.about a{
-    color: rgb(0, 137, 230);
 
-}
 
-.portfolio{
-    text-align:center;
-}
+/********************* Portfolio ***********************/
+
+
 .portfolio{
     text-align:center;
 }
@@ -188,22 +201,28 @@ hr{
 
 }
 
-/*Font Awesome*/
+/********************* Font-Awesome Icons ***********************/
+
 
 .fa {
     padding-left: 20px;
     padding-right: 20px;
     color: white;
+    transition:.5s;
+
   }
   
   .fa:hover {
-      opacity: 0.7;
-      color: white;
+      color: rgb(0, 137, 230);
+      transition:.5s;
 
   }
 
 
-.container{
+/********************* Contact Section ***********************/
+
+
+.contact{
     text-align: center;
 }
 
@@ -242,6 +261,11 @@ hr{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
+
+/********************* Buttons ***********************/
+
 
 .colour-btn{
     padding: 10px 30px 10px 30px;
@@ -284,6 +308,10 @@ hr{
     background: rgb(224, 224, 224);
 }
 
+#work{
+    background: rgb(255, 255, 255);
+}
+
 
 
 #contact{
@@ -301,8 +329,9 @@ hr{
     text-align: center;
     padding: 20px;
     font-size: 12px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     background: rgba(0, 0, 0);
+    border-bottom:  rgb(0, 137, 230) 5px solid ;
 }
 
 
@@ -340,4 +369,6 @@ hr{
 }
 
 
-
+.section-body li{
+    margin: 20px 0;
+  }
